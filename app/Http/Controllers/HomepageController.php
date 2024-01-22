@@ -10,4 +10,9 @@ class HomepageController extends Controller
     {
         return view('welcome');
     }
+
+    public function show ()
+    {
+        return view('posts');
+    }
 }

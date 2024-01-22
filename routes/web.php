@@ -15,3 +15,4 @@ use App\Http\Controllers\HomepageController;
 */
 
 Route::get('/', [HomepageController::class, 'index']);
+Route::get('/posts', [HomepageController::class, 'show']) -> name('posts');
