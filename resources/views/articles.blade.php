@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title')
-    <title>Posts</title>
+    <title>Articles</title>
 @endsection
 
 @section('main')
