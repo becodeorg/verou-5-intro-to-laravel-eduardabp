@@ -11,8 +11,8 @@
 <body class="bg-warning-subtle">
     <nav class="nav justify-content-center bg-danger bg-gradient fixed-top">
         <a href="{{ route('home') }}" class="nav-link m-2 fs-3 link-warning text-decoration-underline">Home</a>
-        <a href="{{ route('posts') }}" class="nav-link m-2 fs-3 link-warning text-decoration-underline">Articles</a>
-        <a href="#" class="nav-link m-2 fs-3 link-warning text-decoration-underline">Spill the Tea</a>
+        <a href="{{ route('articles') }}" class="nav-link m-2 fs-3 link-warning text-decoration-underline">Articles</a>
+        <a href="{{ route('contact') }}" class="nav-link m-2 fs-3 link-warning text-decoration-underline">Spill the Tea</a>
     </nav>
     <header class="text-center pt-5 mt-5 mb-4 text-danger">
         <h1>Verou 5 Daily News</h1>
