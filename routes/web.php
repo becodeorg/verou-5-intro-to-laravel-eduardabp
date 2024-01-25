@@ -14,5 +14,8 @@ use App\Http\Controllers\HomepageController;
 |
 */
 
-Route::get('/', [HomepageController::class, 'index']);
+Route::get('/', [HomepageController::class, 'index']) -> name('home');
 Route::get('/posts', [HomepageController::class, 'show']) -> name('posts');
+
+//create articles route (previous posts)
+//create contact route
