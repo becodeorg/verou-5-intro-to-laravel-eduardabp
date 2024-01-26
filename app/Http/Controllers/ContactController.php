@@ -14,6 +14,13 @@ class ContactController extends Controller
 
     public function submitForm (Request $request)
     {
+
+        $incomingFields = $request->validate([
+            'subject' => 'required',
+            'email' => ['required', 'email'],
+            'message' => ['required', 'min:15']
+        ]);
+
         $subject = $request->input('subject');
         $email = $request->input('email');
         $message = $request->input('message');
