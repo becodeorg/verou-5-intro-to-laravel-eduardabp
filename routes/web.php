@@ -17,10 +17,8 @@ use App\Http\Controllers\ContactController;
 */
 
 Route::get('/', [HomepageController::class, 'index']) -> name('home');
+
 Route::get('/articles', [ArticlesController::class, 'index']) -> name('articles');
+
 Route::get('/spillthetea', [ContactController::class, 'index']) -> name('contact');
-
-
-//create articles route (previous posts)
-//create contact route get
-//create contact route post
+Route::post('/spillthetea', [ContactController::class, 'submitForm']) -> name('submitForm');
